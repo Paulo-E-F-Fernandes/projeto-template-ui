@@ -8,7 +8,8 @@
 * Este projeto foi estruturado para utilizar as seguintes tecnologias:
 	* [Angular 6](https://angular.io/);
     * [PrimeNG 6.1.0](https://www.primefaces.org/primeng/#/);
-    * [Bootstrap 4.1.3](https://getbootstrap.com/).
+    * [Bootstrap 4.1.3](https://getbootstrap.com/);
+	* [ngx-translate 10.0.2](https://github.com/ngx-translate/core).
 
 ---
 ## Pré-requisitos
@@ -58,6 +59,10 @@
 	* O nome da aplicação pode ser alterado no arquivo ***app.component.ts*** que está localizado no diretório ***src*/*app***, alterando o valor da variável **pageTitle**.
 * **Cores** da aplicação:
 	* Utilizar o arquivo ***styles.css*** localizado em ***src*/**.
+* **Internacionalização** da aplicação:
+	* A internacionalização é feita pelo módulo ***ngx-translate*** e para utilizar é necessário usar os seguintes passos:
+		* Criar um arquivo ***json*** no diretório ***src*/*assets*/*i18n** para a linguagem que se quer fazer a tradução;
+		* Usar nos arquivos de *html* a seguinte expressão `{{ 'KEY_ARQUIVO_JSON' | translate }}`, sendo que `KEY_ARQUIVO_JSON` é uma chave que deve ser declarada no arquivo *json* criado anteriormente.
 
 ---
 # Story Board

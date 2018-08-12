@@ -1,11 +1,16 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 // PrimeNG
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
+
+// ngx-translate
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 // Application
 import { AppComponent } from './app.component';
@@ -13,6 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.component';
 import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +32,20 @@ import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
     // Angular
     BrowserAnimationsModule,
     BrowserModule,
+    HttpClientModule,
 
     // PrimeNG
     ButtonModule,
-    SidebarModule
+    SidebarModule,
+
+    // ngx-translate
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     // Angular
