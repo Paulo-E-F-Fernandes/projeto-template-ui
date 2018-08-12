@@ -21,6 +21,16 @@
     background: linear-gradient(#000000, #777777);
 }
 
+/* Menus */
+.nav-tabs .nav-item a {
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    color: #2e3133;
+    background-color: #fff;
+}
+
 /* Sidebar */
 .nav-pills .nav-item a {
     color: #fff;

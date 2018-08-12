@@ -61,7 +61,7 @@
 
 ---
 # Story Board
-* [Trello](https://trello.com/b/3LxDAX2z/projeto-template)
+* [Projeto Template | Trello](https://trello.com/b/3LxDAX2z/projeto-template)
 
 ---
 # Opções de execução

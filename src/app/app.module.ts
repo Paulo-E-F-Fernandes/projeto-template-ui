@@ -11,12 +11,14 @@ import { SidebarModule } from 'primeng/sidebar';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.component';
+import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    NavbarSidebarComponent
+    NavbarSidebarComponent,
+    NavbarMenuComponent
   ],
   imports: [
     // Angular
