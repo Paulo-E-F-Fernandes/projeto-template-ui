@@ -9,7 +9,7 @@
 
 	* [Angular 6](https://angular.io/);
     * [PrimeNG 6.1.0](https://www.primefaces.org/primeng/#/);
-    * [Bootstrap 4](https://getbootstrap.com/).
+    * [Bootstrap 4.1.3](https://getbootstrap.com/).
 
 ---
 ## Pré-requisitos
@@ -23,3 +23,7 @@
 ## Configuração do ambiente
 
 * Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git`;
+
+---
+# Story Board
+* [Trello](https://trello.com/b/3LxDAX2z/projeto-template)
