@@ -1,5 +1,6 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 // Application
 import { Menu } from '../domain/menu';
@@ -13,9 +14,11 @@ export class NavbarComponent implements OnInit {
 
   menuItemsReturned : Menu[] = [];
   pageLogo: string = '/assets/img/logo.png';
-  pageName: string = 'Page-Name';
+  pageName: string;
   
-  constructor() { }
+  constructor(private titleService: Title) { 
+    this.pageName = this.titleService.getTitle();
+  }
 
   ngOnInit() {
     // mock - será ajustado na Task #11

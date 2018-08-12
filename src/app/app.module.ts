@@ -1,6 +1,6 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // PrimeNG
@@ -27,7 +27,10 @@ import { NavbarSidebarComponent } from './navbar-sidebar/navbar-sidebar.componen
     ButtonModule,
     SidebarModule
   ],
-  providers: [],
+  providers: [
+    // Angular
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
