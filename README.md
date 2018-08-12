@@ -9,6 +9,7 @@
 
 	* [Angular 6](https://angular.io/);
     * [PrimeNG 6.1.0](https://www.primefaces.org/primeng/#/);
+    * [Bootstrap 4](https://getbootstrap.com/).
 
 ---
 ## Pré-requisitos
