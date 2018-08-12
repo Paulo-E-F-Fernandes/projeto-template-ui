@@ -23,7 +23,12 @@
 ## Configuração do ambiente
 
 * Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git`;
-
+* Entrar no diretório **projeto-template-ui** que foi criado, abrir os arquivos abaixo, procurar pelo texto *projeto-template-ui* e alterar pelo nome do projeto que está sendo criado; 
+  - `angular.json`
+  - `package.json`
+  - `package-lock.json`
+* Abrir uma janela de terminal neste diretório e executar o comando `npm install`, com isso é criado o diretório **node_modules** com as dependências do projeto;
+* Após a execução do **npm install** já é possível iniciar o servidor com o comando `ng serve`;
 * Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **template-ui**;
 * Após importado o projeto, para facilitar podemos abrir um terminal dentro da *IDE*, através do menu *View* > *Integrated Terminal*
 
@@ -41,6 +46,11 @@
 
 	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c [NOME_COMPONENTE] --spec=false`.
 
+* Para gerar uma nova classe execute o comando `ng generate class [NOME_DIRETÓRIO]/[NOME_CLASSE]`.
+
+	* Criar as classes que representam as entidades no diretório **domain**.
+
+
 ## Configurações da aplicação
 * Alterar ***favicon.ico***:
 	* Substituir o arquivo ***favicon.ico*** localizado em ***src/***. Este arquivo é referenciado no ***index.html***.
@@ -52,3 +62,25 @@
 ---
 # Story Board
 * [Trello](https://trello.com/b/3LxDAX2z/projeto-template)
+
+---
+# Opções de execução
+
+## Build da aplicação
+
+* Executar o comando `ng build` para buildar o projeto. O artefato gerado será armazenado no diretório `dist/`. Usar a *flag* `--prod` para gerar a aplicação de produção.
+
+---
+## Executar os testes unitários
+
+* Para executar os teste unitários execute o comando `ng test`. Será executado os testes via [Karma](https://karma-runner.github.io).
+
+---
+## Executar os testes *end-to-end*
+
+* Para executar testes *end-to-end*, execute o comando `ng e2e`. Será executado os testes via [Protractor](http://www.protractortest.org/).
+
+---
+# Ajuda
+
+* Para ajuda com o Angular CLI use `ng help` ou acesse [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
