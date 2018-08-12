@@ -8,6 +8,7 @@
 * Este projeto foi estruturado para utilizar as seguintes tecnologias:
 
 	* [Angular 6](https://angular.io/);
+    * [PrimeNG 6.1.0](https://www.primefaces.org/primeng/#/);
 
 ---
 ## Pré-requisitos
