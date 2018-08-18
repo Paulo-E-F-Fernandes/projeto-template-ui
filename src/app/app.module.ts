@@ -14,9 +14,10 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 // Application
 import { AppComponent } from './app.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
+import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -24,8 +25,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    FooterComponent,
     NavbarSidebarComponent,
+    NavbarComponent,
     NavbarMenuComponent
   ],
   imports: [
