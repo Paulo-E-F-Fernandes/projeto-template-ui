@@ -2,7 +2,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 // Application
-import { Menu } from '../domain/menu';
+import { Menu } from '../../domains/menu';
 
 @Component({
   selector: 'app-navbar-sidebar',

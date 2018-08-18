@@ -42,12 +42,14 @@
 ---
 ## Comandos para criar os artefatos
 
-* Para gerar um novo componente execute o comando `ng g c [NOME_COMPONENTE]`.
+* Para gerar um novo componente execute o comando `ng generate component components/[NOME_COMPONENTE]` ou de maneira resumida, apenas `ng g c components/[NOME_COMPONENTE]`.
 
-	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c [NOME_COMPONENTE] --spec=false`.
+	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c components/[NOME_COMPONENTE] --spec=false`.
 
 * Para gerar uma nova classe execute o comando `ng generate class [NOME_DIRETÓRIO]/[NOME_CLASSE]`.
-	* Criar as classes que representam as entidades no diretório **domain**.
+	* Criar as classes que representam as entidades no diretório **domains**.
+
+* Para gerar um serviço execute o comando `ng generate service [NOME_DIRETÓRIO]/[NOME_SERVICO]`, com isso será gerado o serviço que será responsável por acessar a API Rest.
 
 
 ## Configurações da aplicação

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 // Application
-import { Menu } from '../domain/menu';
+import { Menu } from '../../domains/menu';
 
 @Component({
   selector: 'app-navbar',
