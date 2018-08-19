@@ -1,14 +1,12 @@
-const express = require('express');
-const path = require('path');
+var express = require("express");
 
-const app = express();
+// Criando o link para o diretório de build Angular
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
-app.use(express.static('./dist/projeto-template-ui'));
 
-app.get('/*', (request, response) => {
-    response.sendFile(path.join(__dirname, '/dist/projeto-template-ui/index.html'));
-});
-
-app.listen(process.env.PORT || 8080, () => {
-    console.log('Server started');
+// Inicializar o app.
+var server = app.listen(process.env.PORT || 8080, function () {
+    var port = server.address().port;
+    console.log("Server started on port ", port);
 });
