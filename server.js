@@ -1,5 +1,7 @@
 var express = require("express");
 
+var app = express();
+
 // Criando o link para o diretório de build Angular
 var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
