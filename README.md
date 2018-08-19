@@ -75,7 +75,17 @@
 
 ## Build da aplicação
 
-* Executar o comando `ng build` para buildar o projeto. O artefato gerado será armazenado no diretório `dist/`. Usar a *flag* `--prod` para gerar a aplicação de produção.
+* Para este projeto foram criadas 2 *branches*, a `master` e a `heroku`.
+  * A *branch* `master` deverá ser utiliza para a evoluição do sistema. Todas as novas funcionalidades devem ser criadas na *branch* `master` ou alguma outras de **desenvolvimento**.
+    * Quando utilizada alguma *branch* de desenvolvimento, após a conclusão da funcionalidade, a mesma deve ser enviada para a `master` através de *merge*.
+	* Após a *branch* `master` estar atualizada com a nova funcionalidade, a mesma dever ser enviada para a *branch* `heroku`. 
+	* Para buildar o projeto é só executar o comando `ng build`. O artefato gerado será armazenado no diretório `dist/`. Usar a *flag* `--prod` para gerar a aplicação de produção.
+  * A *branch* `heroku` foi criada para possuir as configurações para publicar no [Heroku](https://www.heroku.com).
+    * Nessa *branch* não deve ser realizado o desenvolvimento de novas funcionalidades. Para isso deve ser usada a *branch* `master` e depois de concluída a funcionalidade deve ser enviada via `merge` para a *branch* `heroku`;
+	* Para atualizar a aplicação no ***Heroku*** é preciso criar um projeto usando o comando `heroku create [NOME_PROJETO]` através do [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli). Após a criação do projeto, o *Heroku CLI* adicionará o repositório git remote `heroku`;
+	* Estando na *branch* `heroku` é necessário utilizar o comando `git push heroku heroku:master`, com isso as informações da *branch* `heroku` será enviado para a *branch* `master` do repositório remoto `heroku`, é só aguardar o *build* terminar;
+	* Com o *build* concluído, entrar com o comando `heroku open`, isso fará o *browser* abrir e direcionar para a página inicial da aplicação;
+	* Para ver o *log* da aplicação é preciso utilizar o comando `heroku logs --tail` no *Heroku CLI*. 
 
 ---
 ## Executar os testes unitários
