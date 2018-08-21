@@ -9,3 +9,16 @@ span.footer-label-first:after {
 span.footer-label-date-divider:after {
     content: "/";
 }
+
+.footer-social-network-container {
+    align-self: center;
+}
+
+.footer-social-network {
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.footer-social-network:hover {
+    color: #c9c9c9;
+}
