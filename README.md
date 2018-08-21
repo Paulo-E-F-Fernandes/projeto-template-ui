@@ -9,7 +9,8 @@
 	* [Angular 6](https://angular.io/);
     * [PrimeNG 6.1.0](https://www.primefaces.org/primeng/#/);
     * [Bootstrap 4.1.3](https://getbootstrap.com/);
-	* [ngx-translate 10.0.2](https://github.com/ngx-translate/core).
+	* [ngx-translate 10.0.2](https://github.com/ngx-translate/core);
+	* [Font Awesome Angular](https://fontawesome.com/how-to-use/on-the-web/using-with/angular).
 
 ---
 ## Pré-requisitos
