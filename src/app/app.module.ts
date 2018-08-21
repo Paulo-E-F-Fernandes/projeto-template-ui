@@ -4,13 +4,16 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
-// PrimeNG
-import { ButtonModule } from 'primeng/button';
-import { SidebarModule } from 'primeng/sidebar';
+// Font Awesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // ngx-translate
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
+// PrimeNG
+import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
 
 // Application
 import { AppComponent } from './app.component';
@@ -35,6 +38,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
+
+    // Font Awesome
+    FontAwesomeModule,
 
     // PrimeNG
     ButtonModule,
