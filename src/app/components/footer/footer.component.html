@@ -1,3 +1,29 @@
-<p>
-  footer works!
-</p>
+<div class="footer-background">
+  <div class="text-center font-color-secundary pt-sm-0 pb-sm-1">
+    <div class="row p-0 m-0">
+      <div class="offset-3 col-6">
+        <div class="container">
+          <span class="footer-label-first font-weight-bold">
+            {{ footerPageName }}
+          </span>
+          <span class="footer-label-date-divider">{{ footerYearCreated }}</span>
+          <span>{{ footerYearCurrent }}</span>
+        </div>
+        <div class="container">
+          <span class="footer-label-first">
+            <small class="footer-label">{{ 'APP_INFO.VERSION.UI_VERSION_NAME' | translate }}</small>{{ footerVersionUI }}
+          </span>
+          <small class="footer-label">{{ 'APP_INFO.VERSION.API_VERSION_NAME' | translate }}</small>{{ footerVersionAPI }}
+        </div>
+      </div>
+      <div class="col-3 text-center align-middle">
+        TESTE
+        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+          <i class="fa fa-facebook-square"></i>
+          <!-- https://fontawesome.com/how-to-use/on-the-web/using-with/angular -->
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

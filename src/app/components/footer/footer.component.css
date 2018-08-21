@@ -1,0 +1,11 @@
+.footer-label:after {
+    content: ": ";
+}
+
+span.footer-label-first:after {
+    content: " - ";
+}
+
+span.footer-label-date-divider:after {
+    content: "/";
+}

@@ -1,4 +1,10 @@
 {
+    "APP_INFO": {
+        "VERSION": {
+            "UI_VERSION_NAME": "Versão do site",
+            "API_VERSION_NAME": "Versão da API"
+        }
+    },
     "TEST": {
         "TRANSLATE_EXAMPLE": "Direita"
     }
