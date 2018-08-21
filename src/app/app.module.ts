@@ -6,6 +6,9 @@ import { NgModule } from '@angular/core';
 
 // Font Awesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 // ngx-translate
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -25,6 +28,10 @@ import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sideb
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
+
+// Adicionando os estilos de ícones no objeto "library" para facilitar o acesso nos outros componentes.
+library.add(fab, fas);
+
 @NgModule({
   declarations: [
     AppComponent,
