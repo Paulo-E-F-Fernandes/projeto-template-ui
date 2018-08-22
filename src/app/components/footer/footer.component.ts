@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.footerVersionAPI = '0.0.1-SNAPSHOT'; // Buscar da API
-    this.footerVersionUI = '0.0.1'; // Criar um arquivo com a versão e notas da versão 
+    this.footerVersionUI = require('package.json').version;
     this.footerYearCreated = 2018;
     this.footerYearCurrent = new Date().getFullYear();
   }
