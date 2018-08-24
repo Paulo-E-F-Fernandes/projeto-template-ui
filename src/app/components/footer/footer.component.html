@@ -1,30 +1,28 @@
 <div class="footer-background">
-  <div class="text-center font-color-secundary pt-sm-1 pb-sm-1">
+  <div class="font-color-secundary pt-sm-1 pb-sm-1">
     <div class="row p-0 m-0">
-      <div class="offset-3 col-6">
-        <div class="container">
-          <span class="footer-label-first font-weight-bold">
-            {{ footerPageName }}
-          </span>
-          <span class="footer-label-date-divider">{{ footerYearCreated }}</span>
-          <span>{{ footerYearCurrent }}</span>
-        </div>
-        <div class="container">
-          <span class="footer-label-first">
-            <small class="footer-label">{{ 'APP_INFO.VERSION.UI_VERSION_NAME' | translate }}</small>{{ footerVersionUI }}
-          </span>
-          <small class="footer-label">{{ 'APP_INFO.VERSION.API_VERSION_NAME' | translate }}</small>{{ footerVersionAPI }}
-        </div>
-      </div>
-      <div class="col-3 text-center footer-social-network-container">
+      <div class="col-4 text-left">
+        <span class="footer-label-first">
+          <small class="footer-label">{{ 'APP_INFO.VERSION.UI_VERSION_NAME' | translate }}</small>{{ footerVersionUI }}
+        </span>
+        <small class="footer-label">{{ 'APP_INFO.VERSION.API_VERSION_NAME' | translate }}</small>{{ footerVersionAPI }}
+      </div><!-- ./col-4.text-left -->
+      <div class="col-4 text-center">
+        <span class="footer-label-first font-weight-bold">
+          {{ footerPageName }}
+        </span>
+        <span class="footer-label-date-divider">{{ footerYearCreated }}</span>
+        <span>{{ footerYearCurrent }}</span>
+      </div><!-- ./col-4.text-center -->
+      <div class="col-4 text-right footer-social-network-container">
         <a class="footer-social-network" href="https://www.facebook.com/" target="_blank" title="Facebook">
           <fa-icon [icon]="['fab', 'facebook-square']" size="2x"></fa-icon>
         </a>
         <a class="footer-social-network" href="https://twitter.com/?lang=pt-br" target="_blank" role="button" title="Facebook">
           <fa-icon [icon]="['fab', 'twitter-square']" size="2x"></fa-icon>
         </a>
-      </div>
-    </div>
-  </div>
-</div>
+      </div><!-- ./col-4.text-right -->
+    </div><!-- ./row -->
+  </div><!-- ./ font-color-secundary-->
+</div><!-- ./footer-background -->
 
