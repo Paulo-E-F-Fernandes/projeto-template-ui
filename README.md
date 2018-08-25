@@ -69,7 +69,7 @@
 
 ---
 # Story Board
-* [Projeto Template | Trello](https://trello.com/b/3LxDAX2z/projeto-template)
+* [Projeto Template | KanbanFlow](https://kanbanflow.com/board/3zg62Z)
 
 ---
 # Opções de execução
