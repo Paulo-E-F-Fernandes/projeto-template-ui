@@ -4,27 +4,27 @@ export class Login {
     private _accountPass: string;
     private _accountRemember: boolean;
 
-    get user() : string {
+    get accountUser() : string {
         return this._accountUser;
     }
 
-    set user(accountUser: string) {
+    set accountUser(accountUser: string) {
         this._accountUser = accountUser;
     }
 
-    get pass() : string {
+    get accountPass() : string {
         return this._accountPass;
     }
 
-    set pass(accountPass: string) {
+    set accountPass(accountPass: string) {
         this._accountPass = accountPass;
     }
 
-    get remember() : boolean {
+    get accountRemember() : boolean {
         return this._accountRemember;
     }
 
-    set remember(accountRemember: boolean) {
+    set accountRemember(accountRemember: boolean) {
         this._accountRemember = accountRemember;
     }
 
