@@ -5,7 +5,21 @@
             "API_VERSION_NAME": "Versão da API"
         }
     },
-    "TEST": {
-        "TRANSLATE_EXAMPLE": "Direita"
+    "LABEL": {
+        "LOGIN": {
+            "ANONYMOUS_USER": "Anônimo",
+            "EMAIL": "E-mail",
+            "PASSWORD": "Senha",
+            "REMEMBER_ME": "Manter conectado?"
+        },
+        "BUTTON": {
+            "LOGIN": "Entrar"
+        }
+    },
+    "PLACEHOLDER": {
+        "LOGIN": {
+            "EMAIL": "exemplo@email.com.br",
+            "PASSWORD": "digite sua senha"
+        }
     }
 }

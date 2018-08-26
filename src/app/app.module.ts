@@ -24,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
 import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
+import { LoginComponent } from './components/login/login.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -38,7 +39,8 @@ library.add(fab, fas);
     FooterComponent,
     NavbarSidebarComponent,
     NavbarComponent,
-    NavbarMenuComponent
+    NavbarMenuComponent,
+    LoginComponent
   ],
   imports: [
     // Angular
