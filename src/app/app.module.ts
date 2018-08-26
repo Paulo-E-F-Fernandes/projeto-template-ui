@@ -1,6 +1,7 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 // PrimeNG
 import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
+import { InputTextModule } from 'primeng/inputtext';
 import { SidebarModule } from 'primeng/sidebar';
 
 // Application
@@ -46,6 +49,8 @@ library.add(fab, fas);
     // Angular
     BrowserAnimationsModule,
     BrowserModule,
+    CheckboxModule,
+    FormsModule,
     HttpClientModule,
 
     // Font Awesome
@@ -53,6 +58,7 @@ library.add(fab, fas);
 
     // PrimeNG
     ButtonModule,
+    InputTextModule,
     SidebarModule,
 
     // ngx-translate
