@@ -66,6 +66,11 @@
 	* A internacionalização é feita pelo módulo ***ngx-translate*** e para utilizar é necessário usar os seguintes passos:
 		* Criar um arquivo ***json*** no diretório ***src*/*assets*/*i18n** para a linguagem que se quer fazer a tradução;
 		* Usar nos arquivos de *html* a seguinte expressão `{{ 'KEY_ARQUIVO_JSON' | translate }}`, sendo que `KEY_ARQUIVO_JSON` é uma chave que deve ser declarada no arquivo *json* criado anteriormente.
+* Para utilizar os ícones [Font Awesome Angular](https://fontawesome.com/how-to-use/on-the-web/using-with/angular):
+	* Colocamos nos arquivos *html* a seguinte tag: `<fa-icon [icon]="['fas', 'caret-down']" size="1x"></fa-icon>`
+		* Sendo que ***fas*** representa o tipo do ícone do *fort awesome* e ***caret-down*** é o nome do ícone.
+	* Além do ***fas*** que representa os ícones do tipo sólido do *fort awesome*, temos também importado no projeto o ***fab*** que é para os ícones do tipo logomarca.
+	* Para importar novos tipo de ícones, é necessário colocar o import no arquivo *app.module.ts* e depois adicionar no objeto *library*.
 
 ---
 # Story Board
