@@ -10,16 +10,15 @@
             "ANONYMOUS_USER": "Anônimo",
             "EMAIL": "E-mail",
             "PASSWORD": "Senha",
-            "REMEMBER_ME": "Manter conectado?"
+            "PASSWORD_FORGET": "Esqueceu a senha?",
+            "REMEMBER_ME": "Manter conectado?",
+            "SIGN_UP": "Novo por aqui? Cadastre-se!"
         },
         "BUTTON": {
             "LOGIN": "Entrar"
         }
     },
     "PLACEHOLDER": {
-        "LOGIN": {
-            "EMAIL": "exemplo@email.com.br",
-            "PASSWORD": "digite sua senha"
-        }
+        
     }
 }
