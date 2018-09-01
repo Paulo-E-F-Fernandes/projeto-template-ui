@@ -1,6 +1,7 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 // PrimeNG
 import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
+import { InputTextModule } from 'primeng/inputtext';
 import { SidebarModule } from 'primeng/sidebar';
 
 // Application
@@ -24,6 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
 import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
+import { LoginComponent } from './components/login/login.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -38,12 +42,15 @@ library.add(fab, fas);
     FooterComponent,
     NavbarSidebarComponent,
     NavbarComponent,
-    NavbarMenuComponent
+    NavbarMenuComponent,
+    LoginComponent
   ],
   imports: [
     // Angular
     BrowserAnimationsModule,
     BrowserModule,
+    CheckboxModule,
+    FormsModule,
     HttpClientModule,
 
     // Font Awesome
@@ -51,6 +58,7 @@ library.add(fab, fas);
 
     // PrimeNG
     ButtonModule,
+    InputTextModule,
     SidebarModule,
 
     // ngx-translate

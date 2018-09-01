@@ -1,6 +1,5 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -11,8 +10,6 @@ import { Title } from '@angular/platform-browser';
 export class FooterComponent implements OnInit {
 
   footerPageName: String;
-  footerVersionUI: String;
-  footerVersionAPI: String;
   footerYearCreated: Number;
   footerYearCurrent: Number;
 
@@ -21,8 +18,6 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.footerVersionAPI = '0.0.1-SNAPSHOT'; // Buscar da API
-    this.footerVersionUI = require('package.json').version;
     this.footerYearCreated = 2018;
     this.footerYearCurrent = new Date().getFullYear();
   }

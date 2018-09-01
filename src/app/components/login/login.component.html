@@ -1,0 +1,43 @@
+<div class="dropdown">
+
+  <div data-toggle="dropdown" class="row font-color-secundary">
+    <div class="col-11 pr-1 login-navbar-overflow">
+      {{ 'LABEL.LOGIN.ANONYMOUS_USER' | translate }}
+    </div>
+    <div class="col-1 pl-0 text-left">
+      <fa-icon [icon]="['fas', 'caret-down']" size="1x"></fa-icon>
+    </div>
+  </div><!-- ./data-toggle="dropdown" -->
+
+  <div class="dropdown-menu dropdown-menu-right login-background login-menu-shadow">
+    <!-- Formulário de login -->
+    <form #frm="ngForm" (ngSubmit)="signIn(frm)" class="px-3 pt-3 pb-1">
+
+      <div class="form-group ui-float-label">
+        <input type="email" pInputText class="form-control" id="loginEmail" name="loginEmail" ngModel [required]="true" [email]="true">
+        <label for="loginEmail">{{ 'LABEL.LOGIN.EMAIL' | translate }}</label>
+      </div><!-- ./form-group - e-mail -->
+
+      <div class="form-group ui-float-label">
+        <input type="password" pInputText class="form-control" id="loginPassword" name="loginPassword" ngModel [required]="true">
+        <label for="loginPassword">{{ 'LABEL.LOGIN.PASSWORD' | translate }}</label>
+      </div><!-- ./form-group - password -->
+
+      <div class="form-check">
+        <p-checkbox styleClass="form-check-input" id="loginRemember" name="loginRemember" ngModel binary="true" label="{{ 'LABEL.LOGIN.REMEMBER_ME' | translate }}"></p-checkbox>
+      </div><!-- ./form-check - remember me -->
+      
+      <button pButton type="submit" class="btn btn-block" label="{{ 'LABEL.BUTTON.LOGIN' | translate }}" [disabled]="frm.invalid"></button>
+    
+    </form><!-- ./login form -->
+
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">{{ 'LABEL.LOGIN.SIGN_UP' | translate }}</a>
+    <a class="dropdown-item" href="#">{{ 'LABEL.LOGIN.PASSWORD_FORGET' | translate }}</a>
+
+    <div class="dropdown-divider"></div>
+    <h6 class="dropdown-header">{{ 'APP_INFO.VERSION.UI_VERSION_NAME' | translate }}: {{ loginVersionUI }}</h6>
+    <h6 class="dropdown-header">{{ 'APP_INFO.VERSION.API_VERSION_NAME' | translate }}: {{ loginVersionAPI }}</h6>
+  </div><!-- ./dropdown-menu -->
+
+</div><!-- ./dropdown -->
