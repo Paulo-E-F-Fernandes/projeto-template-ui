@@ -2,7 +2,22 @@
     <app-navbar></app-navbar>
 </header>
 
-<!-- <main role="main" class="container"></main> -->
+<div role="main" class="row m-2">
+    <!-- Left-side content -->
+    <div class="d-none d-sm-block col-sm-2">
+
+    </div>
+
+    <!-- Main content -->
+    <div class="col-12 col-sm-8">
+        <router-outlet></router-outlet>
+    </div>
+
+    <!-- Right-side content -->
+    <div class="d-none d-sm-block col-sm-2">
+
+    </div>
+</div>
 
 <footer class="footer d-none d-sm-block col-sm-12 m-sm-0 p-sm-0">
     <app-footer></app-footer>

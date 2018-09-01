@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
     this.menuItemsReturned.push(new Menu('tab2', 'Tab 2', 'tab.2.controller'));
     this.menuItemsReturned.push(new Menu('tab3', 'Tab 3', 'tab.3.controller'));
     this.menuItemsReturned.push(new Menu('tab4', 'Tab 4', 'tab.4.controller'));
-    this.menuItemsReturned.push(new Menu('tab5', 'Tab 5', 'tab.5.controller'));
+    this.menuItemsReturned.push(new Menu('signUp', 'LABEL.MENU.SIGN_UP', 'signUp'));
     this.menuItemsReturned.push(new Menu('tab6', 'Tab 6', 'tab.6.controller'));
   }
 
