@@ -1,0 +1,63 @@
+<form #frm="ngForm" (ngSubmit)="signUp(frm)">
+
+  <!-- Name -->
+  <div class="row">
+    <div class="form-group col-12">
+      <label for="userName">{{ 'LABEL.USER.NAME' | translate }}</label>
+      <input type="text" pInputText class="form-control" id="userName" name="userName" [(ngModel)]="model.userName" required placeholder="{{ 'PLACEHOLDER.USER.NAME' | translate }}">
+    </div><!-- ./form-group -->
+  </div><!-- ./row -->
+
+  <!-- Nickname -->
+  <div class="row">
+    <div class="form-group col-12">
+      <label for="divUserNickname">{{ 'LABEL.USER.USE_NICKNAME'| translate }}</label>
+      <div class="input-group" id="divUserNickname">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" name="userUseNickname" [(ngModel)]="model.userUseNickname" (change)="changeUseNickname($event)">
+          </div><!-- ./input-group-text -->
+        </div><!-- ./input-group-prepend -->
+        <input type="text" pIntupText class="form-control" id="userNickname" name="userNickname" [(ngModel)]="model.userNickname" [required]="! disabledNickname" [disabled]="disabledNickname" placeholder="{{ (disabledNickname ? 'PLACEHOLDER.USER.USE_NICKNAME' : 'PLACEHOLDER.USER.NICKNAME') | translate }}">
+      </div><!-- ./input-group -->
+    </div><!-- ./form-group -->
+  </div><!-- ./row -->
+
+  <!-- E-mail -->
+  <div class="row">
+    <div class="form-group col-12">
+      <label for="userEmail">{{ 'LABEL.USER.EMAIL' | translate }}</label>
+      <input type="email" pInputText class="form-control" id="userEmail" name="userEmail" [(ngModel)]="model.userEmail" [email]="true" required placeholder="{{ 'PLACEHOLDER.USER.EMAIL' | translate }}">
+    </div><!-- ./form-group - user e-mail -->
+  </div><!-- ./row -->
+
+  <!-- Password -->
+  <div class="row">
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="userPassword">{{ 'LABEL.USER.PASSWORD' | translate }}</label>
+      <input type="password" pInputText class="form-control" id="userPassword" name="userPassword" [(ngModel)]="model.userPassword" required placeholder="{{ 'PLACEHOLDER.USER.PASSWORD' | translate }}">
+    </div><!-- ./form-group - user password -->
+    
+    <div class="form-group col-sm-12 col-md-6">
+      <label for="confirmPassword">{{ 'LABEL.USER.CONFIRM_PASSWORD' | translate }}</label>
+      <input type="password" pInputText class="form-control" id="confirmPassword" name="confirmPassword" [(ngModel)]="model.userConfirmPassword" required compare="userPassword" placeholder="{{ 'PLACEHOLDER.USER.CONFIRM_PASSWORD' | translate }}">
+    </div><!-- ./form-group - confirm password -->
+  </div><!-- ./row -->
+
+  <div class="row">
+    <div class="form-group col-12 col-sm-6">
+      <button type="submit" class="btn btn-block btn-success" [disabled]="frm.invalid">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button>
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <!-- <button type="button" class="btn btn-block btn-danger">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button> -->
+      <a class="btn btn-block btn-danger" 
+      routerLink="/home" 
+      skipLocationChange 
+      >
+      {{ 'LABEL.BUTTON.CANCEL' | translate }}
+      </a>
+    </div>
+  </div><!-- ./row -->
+    
+</form>
+

@@ -23,11 +23,14 @@ import { SidebarModule } from 'primeng/sidebar';
 
 // Application
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
 import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
 import { LoginComponent } from './components/login/login.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { HomeComponent } from './components/home/home.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -43,9 +46,14 @@ library.add(fab, fas);
     NavbarSidebarComponent,
     NavbarComponent,
     NavbarMenuComponent,
-    LoginComponent
+    LoginComponent,
+    UserRegistrationComponent,
+    HomeComponent
   ],
   imports: [
+    // Application
+    AppRoutingModule,
+
     // Angular
     BrowserAnimationsModule,
     BrowserModule,
