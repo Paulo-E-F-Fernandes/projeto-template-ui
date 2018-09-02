@@ -1,6 +1,6 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserRegistration } from '../../domains/user-registration';
 
 @Component({
@@ -12,29 +12,43 @@ export class UserRegistrationComponent implements OnInit {
 
   disabledNickname: boolean = true;
   model: UserRegistration;
+  userForm: FormGroup;
 
   constructor() { }
 
   ngOnInit() {
     this.model = new UserRegistration();
+    this.userForm = new FormGroup({
+      'userName': new FormControl(this.model.userName, [Validators.required]),
+      'userUseNickname': new FormControl(this.model.userUseNickname, []),
+      'userNickname': new FormControl({value: this.model.userNickname, disabled: true}, []),
+      'userEmail': new FormControl(this.model.userEmail, [
+        Validators.required,
+        Validators.email
+      ]),
+      'userPassword': new FormControl(this.model.userPassword, []),
+      'userConfirmPassword': new FormControl(this.model.userConfirmPassword, [Validators.required])
+    });
+
   }
 
   changeUseNickname(ev) {
+    // Reseta o valor do campo
+    this.userForm.controls.userNickname.reset();
     this.disabledNickname = !ev.target.checked;
-    this.model.userNickname = '';
-    // console.log(form.value);
+
+    if (ev.target.checked) {
+      this.userForm.controls.userNickname.enable();
+    } else {
+      this.userForm.controls.userNickname.disable();
+    }
   }
 
-  signUp(form: FormControl) {
-    if (form.valid) {
-      console.log('is valid');
-    } else {
-      console.log('is not valid');
-    }
-    console.log(form.value);
-
+  signUp() {
     console.log('this.model');
-    console.log(this.model);
+    console.warn(this.model);
+    console.log('this.userForm.value');
+    console.warn(this.userForm.value);
   }
 
 }
