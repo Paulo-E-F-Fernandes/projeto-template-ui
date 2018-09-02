@@ -5,6 +5,18 @@
             "API_VERSION_NAME": "Versão da API"
         }
     },
+    "MODAL": {
+        "BUTTON": {
+            "CONFIRM": "Confirmar",
+            "CLOSE": "Fechar"
+        },
+        "BODY": {
+            "CANCEL_TEXT": "Deseja cancelar as alterações realizadas?"
+        },
+        "TITLE": {
+            "CANCEL": "Cancelar!"
+        }
+    },
     "LABEL": {
         "BUTTON": {
             "CANCEL": "Cancelar",
@@ -19,6 +31,7 @@
             "SIGN_UP": "Novo por aqui? Cadastre-se!"
         },
         "MENU": {
+            "HOME": "Home",
             "SIGN_UP": "Cadastro"
         },
         "USER": {

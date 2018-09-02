@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     // mock - será ajustado na Task #11
-    this.menuItemsReturned.push(new Menu('home', 'Home', 'home.controller').isActive());
+    this.menuItemsReturned.push(new Menu('home', 'LABEL.MENU.HOME', 'home').isActive());
     this.menuItemsReturned.push(new Menu('tab1', 'Tab 1', 'tab.1.controller'));
     this.menuItemsReturned.push(new Menu('tab2', 'Tab 2', 'tab.2.controller'));
     this.menuItemsReturned.push(new Menu('tab3', 'Tab 3', 'tab.3.controller'));

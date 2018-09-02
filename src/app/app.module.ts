@@ -31,6 +31,7 @@ import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sideb
 import { LoginComponent } from './components/login/login.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { HomeComponent } from './components/home/home.component';
+import { CancelButtonComponent } from './components/cancel-button/cancel-button.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -48,7 +49,8 @@ library.add(fab, fas);
     NavbarMenuComponent,
     LoginComponent,
     UserRegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    CancelButtonComponent
   ],
   imports: [
     // Application

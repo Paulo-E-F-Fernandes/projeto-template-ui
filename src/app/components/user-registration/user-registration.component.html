@@ -49,13 +49,7 @@
       <button type="submit" class="btn btn-block btn-success" [disabled]="frm.invalid">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button>
     </div>
     <div class="form-group col-12 col-sm-6">
-      <!-- <button type="button" class="btn btn-block btn-danger">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button> -->
-      <a class="btn btn-block btn-danger" 
-      routerLink="/home" 
-      skipLocationChange 
-      >
-      {{ 'LABEL.BUTTON.CANCEL' | translate }}
-      </a>
+      <app-cancel-button></app-cancel-button>
     </div>
   </div><!-- ./row -->
     
