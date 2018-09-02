@@ -1,7 +1,7 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -50,7 +50,7 @@ library.add(fab, fas);
     LoginComponent,
     UserRegistrationComponent,
     HomeComponent,
-    CancelButtonComponent
+    CancelButtonComponent,
   ],
   imports: [
     // Application
@@ -62,6 +62,7 @@ library.add(fab, fas);
     CheckboxModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
 
     // Font Awesome
     FontAwesomeModule,
