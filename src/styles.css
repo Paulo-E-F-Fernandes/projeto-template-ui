@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+/* **************** */
 /* **** COLORS **** */
+/* **************** */
+
+/* Application */
 .font-color-secundary {
     color: #ffffff;
 }
@@ -11,7 +15,19 @@
     color: #000000 !important;
 }
 
+/* Angular custons */
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #28a745;
+}
+  
+.ng-invalid:not(form)  {
+    border-left: 5px solid #dc3545;
+}
+
+
+/* ******************** */
 /* **** COMPONENTS **** */
+/* ******************** */
 /* Backgrounds */
 .footer-background {
     background: #000000; /* Para browser que não suportam gradient */
@@ -55,10 +71,4 @@
 
 .ui-sidebar-left {
     width: 15em !important;
-}
-
-/* Footer */
-.footer {
-    position: absolute;
-    bottom: 0px;
 }

@@ -1,6 +1,8 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+// Application
 import { Login } from '../../domains/login';
 
 @Component({
@@ -14,17 +16,29 @@ export class LoginComponent implements OnInit {
   loginVersionAPI: String;
 
   login: Login;
+  loginForm: FormGroup;
 
   constructor() { }
 
   ngOnInit() {
     this.loginVersionAPI = '0.0.1-SNAPSHOT'; // Buscar da API
     this.loginVersionUI = require('package.json').version;
+
+    this.login = new Login();
+    this.loginForm = new FormGroup({
+      'loginEmail': new FormControl(this.login.accountUser, [
+        Validators.required, 
+        Validators.email
+      ]),
+      'loginPassword': new FormControl(this.login.accountPassword, [Validators.required]),
+      'loginRemember': new FormControl(this.login.accountRemember, [])
+    });
   }
 
-  signIn(form: FormControl) {
+  signIn() {
     console.log('sign in');
-    console.log(form.value);
+    console.log('this.userForm.value');
+    console.warn(this.loginForm.value);
   }
 
 }

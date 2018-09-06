@@ -11,24 +11,24 @@
 
   <div class="dropdown-menu dropdown-menu-right login-background login-menu-shadow">
     <!-- Formulário de login -->
-    <form #frm="ngForm" (ngSubmit)="signIn(frm)" class="px-3 pt-3 pb-1">
+    <form (ngSubmit)="signIn()" [formGroup]="loginForm" class="px-3 pt-3 pb-1">
 
       <div class="form-group ui-float-label">
-        <input type="email" pInputText class="form-control" id="loginEmail" name="loginEmail" ngModel [required]="true" [email]="true">
+        <input type="email" pInputText class="form-control" id="loginEmail" formControlName="loginEmail" required>
         <label for="loginEmail">{{ 'LABEL.LOGIN.EMAIL' | translate }}</label>
       </div><!-- ./form-group - e-mail -->
 
       <div class="form-group ui-float-label">
-        <input type="password" pInputText class="form-control" id="loginPassword" name="loginPassword" ngModel [required]="true">
+        <input type="password" pInputText class="form-control" id="loginPassword" formControlName="loginPassword" required>
         <label for="loginPassword">{{ 'LABEL.LOGIN.PASSWORD' | translate }}</label>
       </div><!-- ./form-group - password -->
 
       <div class="form-check">
-        <p-checkbox styleClass="form-check-input" id="loginRemember" name="loginRemember" ngModel binary="true" label="{{ 'LABEL.LOGIN.REMEMBER_ME' | translate }}"></p-checkbox>
+        <p-checkbox styleClass="form-check-input" id="loginRemember" formControlName="loginRemember" binary="true" label="{{ 'LABEL.LOGIN.REMEMBER_ME' | translate }}"></p-checkbox>
       </div><!-- ./form-check - remember me -->
       
-      <button pButton type="submit" class="btn btn-block" label="{{ 'LABEL.BUTTON.LOGIN' | translate }}" [disabled]="frm.invalid"></button>
-    
+      <button type="submit" class="btn btn-block btn-success" [disabled]="loginForm.invalid">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button>
+      
     </form><!-- ./login form -->
 
     <div class="dropdown-divider"></div>
