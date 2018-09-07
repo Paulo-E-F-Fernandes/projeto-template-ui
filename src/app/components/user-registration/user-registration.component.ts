@@ -12,9 +12,9 @@ import { UserRegistration } from '../../domains/user-registration';
 })
 export class UserRegistrationComponent implements OnInit {
 
-  disabledNickname: boolean = true;
-  model: UserRegistration;
-  userForm: FormGroup;
+  private model: UserRegistration;
+  public disabledNickname: boolean = true;
+  public userForm: FormGroup;
 
   constructor() { }
 
