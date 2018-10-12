@@ -23,7 +23,7 @@
 ---
 ## Configuração do ambiente
 
-* Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git`;
+* Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]`;
 * Entrar no diretório **projeto-template-ui** que foi criado, abrir os arquivos abaixo, procurar pelo texto *projeto-template-ui* e alterar pelo nome do projeto que está sendo criado; 
 	* `angular.json`
 	* `package.json`
