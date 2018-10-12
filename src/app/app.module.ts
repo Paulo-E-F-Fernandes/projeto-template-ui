@@ -1,7 +1,7 @@
 // Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule, Title } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
@@ -23,11 +23,15 @@ import { SidebarModule } from 'primeng/sidebar';
 
 // Application
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
 import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
 import { LoginComponent } from './components/login/login.component';
+import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { HomeComponent } from './components/home/home.component';
+import { CancelButtonComponent } from './components/cancel-button/cancel-button.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -43,15 +47,22 @@ library.add(fab, fas);
     NavbarSidebarComponent,
     NavbarComponent,
     NavbarMenuComponent,
-    LoginComponent
+    LoginComponent,
+    UserRegistrationComponent,
+    HomeComponent,
+    CancelButtonComponent,
   ],
   imports: [
+    // Application
+    AppRoutingModule,
+
     // Angular
     BrowserAnimationsModule,
     BrowserModule,
     CheckboxModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
 
     // Font Awesome
     FontAwesomeModule,

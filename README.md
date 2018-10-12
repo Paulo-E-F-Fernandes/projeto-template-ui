@@ -52,6 +52,8 @@
 
 * Para gerar um serviço execute o comando `ng generate service [NOME_DIRETÓRIO]/[NOME_SERVICO]`, com isso será gerado o serviço que será responsável por acessar a API Rest.
 
+* Para gerar uma diretiva execute o comando `ng g directive [NOME_DIRETÓRIO]/[NOME_DIRETIVA]`.
+	* Criar as diretivas no diretório **directives**.
 
 ## Configurações da aplicação
 * Alterar ***favicon.ico***:

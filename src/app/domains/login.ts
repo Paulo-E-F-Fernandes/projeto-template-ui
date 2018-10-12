@@ -1,8 +1,12 @@
 export class Login {
 
     private _accountUser: string;
-    private _accountPass: string;
+    private _accountPassword: string;
     private _accountRemember: boolean;
+
+    constructor() {
+        this.accountRemember = false;
+    }
 
     get accountUser() : string {
         return this._accountUser;
@@ -12,12 +16,12 @@ export class Login {
         this._accountUser = accountUser;
     }
 
-    get accountPass() : string {
-        return this._accountPass;
+    get accountPassword() : string {
+        return this._accountPassword;
     }
 
-    set accountPass(accountPass: string) {
-        this._accountPass = accountPass;
+    set accountPassword(accountPassword: string) {
+        this._accountPassword = accountPassword;
     }
 
     get accountRemember() : boolean {

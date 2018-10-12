@@ -14,6 +14,9 @@
             "REMEMBER_ME": "Remember me",
             "SIGN_UP": "New around here? Sign up!"
         },
+        "MENU": {
+            "SIGN_UP": "Register"
+        },
         "BUTTON": {
             "LOGIN": "Sign in"
         }

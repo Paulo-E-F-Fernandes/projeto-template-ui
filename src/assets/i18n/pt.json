@@ -5,7 +5,23 @@
             "API_VERSION_NAME": "Versão da API"
         }
     },
+    "MODAL": {
+        "BUTTON": {
+            "CONFIRM": "Confirmar",
+            "CLOSE": "Fechar"
+        },
+        "BODY": {
+            "CANCEL_TEXT": "Deseja cancelar as alterações realizadas?"
+        },
+        "TITLE": {
+            "CANCEL": "Cancelar!"
+        }
+    },
     "LABEL": {
+        "BUTTON": {
+            "CANCEL": "Cancelar",
+            "LOGIN": "Entrar"
+        },
         "LOGIN": {
             "ANONYMOUS_USER": "Anônimo",
             "EMAIL": "E-mail",
@@ -14,11 +30,26 @@
             "REMEMBER_ME": "Manter conectado?",
             "SIGN_UP": "Novo por aqui? Cadastre-se!"
         },
-        "BUTTON": {
-            "LOGIN": "Entrar"
+        "MENU": {
+            "HOME": "Home",
+            "SIGN_UP": "Cadastro"
+        },
+        "USER": {
+            "EMAIL": "E-mail",
+            "NAME": "Nome",
+            "PASSWORD": "Senha",
+            "CONFIRM_PASSWORD": "Repetir a senha",
+            "USE_NICKNAME": "Gostaria de ser conhecido por outro nome?"
         }
     },
     "PLACEHOLDER": {
-        
+        "USER": {
+            "EMAIL": "digite o seu e-mail",
+            "NAME": "digite o seu nome",
+            "PASSWORD": "digite a sua senha",
+            "CONFIRM_PASSWORD": "repita a sua senha",
+            "NICKNAME": "informe como deseja ser conhecida(o)",
+            "USE_NICKNAME": "caso queira ser conhecida(o) por outro nome, clique no check ao lado"
+        }
     }
 }

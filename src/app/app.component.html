@@ -1,9 +1,24 @@
-<header>
+<header class="col-12 sticky-top m-0 p-0">
     <app-navbar></app-navbar>
 </header>
 
-<!-- <main role="main" class="container"></main> -->
+<div role="main" class="row mt-2 mr-0 mb-5 ml-0 p-0">
+    <!-- Left-side content -->
+    <div class="d-none d-sm-block col-sm-2">
 
-<footer class="footer d-none d-sm-block col-sm-12 m-sm-0 p-sm-0">
+    </div>
+
+    <!-- Main content -->
+    <div class="col-12 col-sm-8">
+        <router-outlet></router-outlet>
+    </div>
+
+    <!-- Right-side content -->
+    <div class="d-none d-sm-block col-sm-2">
+
+    </div>
+</div>
+
+<footer class="footer d-none d-sm-block col-sm-12 fixed-bottom m-0 p-0">
     <app-footer></app-footer>
 </footer>
