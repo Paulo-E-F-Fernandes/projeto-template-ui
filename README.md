@@ -43,17 +43,23 @@
 ---
 ## Comandos para criar os artefatos
 
-* Para gerar um novo componente execute o comando `ng generate component components/[NOME_COMPONENTE]` ou de maneira resumida, apenas `ng g c components/[NOME_COMPONENTE]`.
+* Para gerar um novo componente execute o comando `ng generate component [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]` ou de maneira resumida, apenas `ng g c [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]`.
+	* Criar os componentes no diretório **components**.
+	* Caso queria criar um componente dentro de um módulo específico, utilizar o comando:
+		* `ng generate component [NOME_DIRETÓRIO_MÓDULO]/[NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]`
 
 	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c components/[NOME_COMPONENTE] --spec=false`.
 
-* Para gerar uma nova classe execute o comando `ng generate class [NOME_DIRETÓRIO]/[NOME_CLASSE]`.
+* Para gerar uma nova classe execute o comando `ng generate class [NOME_DIRETÓRIO_CLASSE]/[NOME_CLASSE]`.
 	* Criar as classes que representam as entidades no diretório **domains**.
 
-* Para gerar um serviço execute o comando `ng generate service [NOME_DIRETÓRIO]/[NOME_SERVICO]`, com isso será gerado o serviço que será responsável por acessar a API Rest.
+* Para gerar um serviço execute o comando `ng generate service [NOME_DIRETÓRIO_SERVICO]/[NOME_SERVICO]`, com isso será gerado o serviço que será responsável por acessar a API Rest.
 
-* Para gerar uma diretiva execute o comando `ng g directive [NOME_DIRETÓRIO]/[NOME_DIRETIVA]`.
+* Para gerar uma diretiva execute o comando `ng g directive [NOME_DIRETÓRIO_DIRETIVA]/[NOME_DIRETIVA]`.
 	* Criar as diretivas no diretório **directives**.
+
+* Para gerar os módulos, execute o comando `ng generate module [NOME_DIRETÓRIO_MÓDULO]/[NOME_MÓDULO]`.
+	* Criar os módulos no diretório **modules**.
 
 ## Configurações da aplicação
 * Alterar ***favicon.ico***:
