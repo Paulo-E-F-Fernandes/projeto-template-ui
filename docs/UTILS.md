@@ -1,11 +1,13 @@
 # Classes utilitárias existente
 
----
-* **FormUtils** (***src*/*utils*/*form-utils.ts***):
+## FormUtils
+
+* Arquivo localizado em ***src*/*utils*/*form-utils.ts***)
     * *isValidPassword*
 
----
-* **StringUtils** (***src*/*utils*/*string-utils.ts***)
+## StringUtils
+
+* Arquivo localizado em ***src*/*utils*/*string-utils.ts***
     * *isEmpty*
     * *isEquals*
     * *isNotEmpty*

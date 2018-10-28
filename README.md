@@ -2,7 +2,6 @@
 
 * Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8, através do comando `ng new projeto-template-ui`.
 
----
 ## Tecnologias utilizadas
 
 * Este projeto foi estruturado para utilizar as seguintes tecnologias:
@@ -12,7 +11,6 @@
 	* [ngx-translate 10.0.2](https://github.com/ngx-translate/core);
 	* [Font Awesome Angular](https://fontawesome.com/how-to-use/on-the-web/using-with/angular).
 
----
 ## Pré-requisitos
 
 * O versionador de código [*Git*](https://git-scm.com/);
@@ -20,7 +18,6 @@
 * [*Node.js*](https://nodejs.org/en/) e [*npm*](https://www.npmjs.com/). O *npm* é instalado junto com o *Node.js*;
 * [*Angular CLI*](https://cli.angular.io/). Para instalar o *Angular CLI* usaremos o *npm*. Para isso é necessário  **1)** Abrir um janela de terminal e **2)** executar o comando `npm install -g @angular/cli => -g = global`.
 
----
 ## Configuração do ambiente
 
 * Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]`;
@@ -33,14 +30,12 @@
 * Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **template-ui**;
 * Após importado o projeto, para facilitar podemos abrir um terminal dentro da *IDE*, através do menu *View* > *Integrated Terminal*
 
----
 ## Servidor de desenvolvimento
 
 * Para executar o servidor de desenvolvimento é só executar no terminal o comando `ng serve`, com isso a aplicação será publicada em um servidor *Node*. Para acessar a aplicação é só colocar a URL `http://localhost:4200/` no browser.
 
 	**OBS.:** Qualquer alteração nos códigos fontes da aplicação será automaticamente recarregada no browser.
 
----
 ## Comandos para criar os artefatos
 
 * Para gerar um novo componente execute o comando `ng generate component [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]` ou de maneira resumida, apenas `ng g c [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]`.
@@ -85,11 +80,9 @@
 	* Além do ***fas*** que representa os ícones do tipo sólido do *fort awesome*, temos também importado no projeto o ***fab*** que é para os ícones do tipo logomarca.
 	* Para importar novos tipo de ícones, é necessário colocar o import no arquivo *app.module.ts* e depois adicionar no objeto *library*.
 
----
 # Story Board
 * [Projeto Template | KanbanFlow](https://kanbanflow.com/board/3zg62Z)
 
----
 # Opções de execução
 
 ## Build da aplicação
@@ -106,17 +99,14 @@
 	* Com o *build* concluído, entrar com o comando `heroku open`, isso fará o *browser* abrir e direcionar para a página inicial da aplicação;
 	* Para ver o *log* da aplicação é preciso utilizar o comando `heroku logs --tail` no *Heroku CLI*. 
 
----
 ## Executar os testes unitários
 
 * Para executar os teste unitários execute o comando `ng test`. Será executado os testes via [Karma](https://karma-runner.github.io).
 
----
 ## Executar os testes *end-to-end*
 
 * Para executar testes *end-to-end*, execute o comando `ng e2e`. Será executado os testes via [Protractor](http://www.protractortest.org/).
 
----
 # Ajuda
 
 * Para ajuda com o Angular CLI use `ng help` ou acesse [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
