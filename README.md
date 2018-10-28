@@ -61,6 +61,11 @@
 * Para gerar os módulos, execute o comando `ng generate module [NOME_DIRETÓRIO_MÓDULO]/[NOME_MÓDULO]`.
 	* Criar os módulos no diretório **modules**.
 
+* Para gerar classes utilitárias, executar o comando `ng generate class [NOME_DIRETÓRIO]/[NOME_CLASSE_UTILITÁRIA]`.
+	* Usar o pós-fixo **utils** nas classes utilitárias, por exemplo: `string-utils`;
+	* Criar os módulos no diretório **utils**;
+	* Para ver as classes utilitárias existentes, clique [aqui](docs/UTILS.md)!
+
 ## Configurações da aplicação
 * Alterar ***favicon.ico***:
 	* Substituir o arquivo ***favicon.ico*** localizado em ***src*/**. Este arquivo é referenciado no ***index.html***.
@@ -72,7 +77,7 @@
 	* Utilizar o arquivo ***styles.css*** localizado em ***src*/**.
 * **Internacionalização** da aplicação:
 	* A internacionalização é feita pelo módulo ***ngx-translate*** e para utilizar é necessário usar os seguintes passos:
-		* Criar um arquivo ***json*** no diretório ***src*/*assets*/*i18n** para a linguagem que se quer fazer a tradução;
+		* Criar um arquivo ***json*** no diretório ***src*/*assets*/*i18n*** para a linguagem que se quer fazer a tradução;
 		* Usar nos arquivos de *html* a seguinte expressão `{{ 'KEY_ARQUIVO_JSON' | translate }}`, sendo que `KEY_ARQUIVO_JSON` é uma chave que deve ser declarada no arquivo *json* criado anteriormente.
 * Para utilizar os ícones [Font Awesome Angular](https://fontawesome.com/how-to-use/on-the-web/using-with/angular):
 	* Colocamos nos arquivos *html* a seguinte tag: `<fa-icon [icon]="['fas', 'caret-down']" size="1x"></fa-icon>`
