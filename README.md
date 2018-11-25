@@ -60,6 +60,8 @@
 	* Usar o pós-fixo **utils** nas classes utilitárias, por exemplo: `string-utils`;
 	* Criar os módulos no diretório **utils**;
 	* Para ver as classes utilitárias existentes, clique [aqui](docs/UTILS.md)!
+  
+* Para gerar as interfaces, executar o comando `ng generate interface [NOME_DIRETORIO_INTERFACE]/[NOME_INTERFACE] <type>` ou de maneira resumida `ng generate i [NOME_DIRETORIO_INTERFACE]/[NOME_INTERFACE]`
 
 ## Configurações da aplicação
 * Alterar ***favicon.ico***:
