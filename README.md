@@ -1,6 +1,6 @@
 # Projeto Projeto-Template-UI
 
-* Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8, através do comando `ng new projeto-template-ui`.
+* Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8, através do comando `ng new projeto-template-ui`.
 
 ## Tecnologias utilizadas
 
@@ -20,15 +20,32 @@
 
 ## Configuração do ambiente
 
-* Clonar os fontes do repositório *git* via **ssh** `git clone git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]` **OU https** `git clone https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git [NOME_PROJETO]`;
-* Entrar no diretório **projeto-template-ui** que foi criado, abrir os arquivos abaixo, procurar pelo texto *projeto-template-ui* e alterar pelo nome do projeto que está sendo criado; 
+* Passos para baixar e configurar o *projeto-template-ui* e utilizar em seus projetos:
+  * Criar um diretório onde ficará o projeto;
+  	* Por exemplo, usar o comando `mkdir "NOME_DIRETÓRIO_PROJETO"`
+  * Navegar até o diretório "NOME_DIRETÓRIO_PROJETO" criado no passo anterior;
+	* Por exemplo, usar o comando `cd "NOME_DIRETÓRIO_PROJETO"/`
+  * Iniciar um repositório do *git*, usando o comando `git init`;
+  * Adicionar o *remote* no *git* local;
+	* Usar o comando `git remote add origin git@github.com:Paulo-E-F-Fernandes/projeto-template-ui.git` para adicionar o *remote* via **ssh**.
+  	* Usar o comando `git remote add origin https://github.com/Paulo-E-F-Fernandes/projeto-template-ui.git` para adicionar o *remote* via **https**.
+  * Atualizar o *git* local com as informações do *git* remoto através do comando `git pull`;
+  * Mudar para a *branch master* através do comando `git checkout master`. Está *branch* será utilizada a evoluição do sistema;
+  * Mudar para a *branch heroku* através do comando `git checkout heroku`. Está *branch* será utilizada somente para publicar o *app* no [*heroku*](https://www.heroku.com/).
+
+* No diretório "NOME_DIRETÓRIO_PROJETO", abrir os arquivos abaixo, procurar pelo texto *projeto-template-ui* e alterar pelo nome do projeto que está sendo criado; 
 	* `angular.json`
+	* `app.e2e-spec.ts`
+	* `app.component.spec.ts`
 	* `package.json`
 	* `package-lock.json`
 * Abrir uma janela de terminal neste diretório e executar o comando `npm install`, com isso é criado o diretório **node_modules** com as dependências do projeto;
 * Após a execução do **npm install** já é possível iniciar o servidor com o comando `ng serve`;
-* Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **template-ui**;
+* Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **"NOME_DIRETÓRIO_PROJETO"**;
 * Após importado o projeto, para facilitar podemos abrir um terminal dentro da *IDE*, através do menu *View* > *Integrated Terminal*
+
+
+
 
 ## Servidor de desenvolvimento
 
