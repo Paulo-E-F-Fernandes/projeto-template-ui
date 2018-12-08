@@ -11,11 +11,11 @@ import { Menu } from '../../domains/menu';
 })
 export class NavbarMenuComponent implements OnInit {
 
-  @Input() menuItems: Menu[];
+  @Input() 
+  public menuItems: Menu[];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

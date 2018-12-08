@@ -1,7 +1,7 @@
 <div class="dropdown">
 
   <div data-toggle="dropdown" class="row font-color-secundary">
-    <div class="col-11 pr-1 login-navbar-overflow">
+    <div class="col-11 pr-1 app-login-navbar-overflow">
       {{ 'LABEL.LOGIN.ANONYMOUS_USER' | translate }}
     </div>
     <div class="col-1 pl-0 text-left">
@@ -9,7 +9,7 @@
     </div>
   </div><!-- ./data-toggle="dropdown" -->
 
-  <div class="dropdown-menu dropdown-menu-right login-background login-menu-shadow">
+  <div class="dropdown-menu dropdown-menu-right login-background app-login-menu-shadow">
     <!-- Formulário de login -->
     <form (ngSubmit)="signIn()" [formGroup]="loginForm" class="px-3 pt-3 pb-1">
 

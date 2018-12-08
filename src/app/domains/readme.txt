@@ -1,0 +1,1 @@
+* Diretório em que as "entidades" da aplicação devem ser colocados.

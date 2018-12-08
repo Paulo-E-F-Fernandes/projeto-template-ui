@@ -41,37 +41,56 @@
 	* `package-lock.json`
 * Abrir uma janela de terminal neste diretório e executar o comando `npm install`, com isso é criado o diretório **node_modules** com as dependências do projeto;
 * Após a execução do **npm install** já é possível iniciar o servidor com o comando `ng serve`;
-* Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **"NOME_DIRETÓRIO_PROJETO"**;
+* Importar o projeto no *Visual Studio Code*, para isso, após abrir a *IDE*, selecionar *File* > *Open Folder...* e selecionar o diretório do **"NOME_DIRETÓRIO_PROJETO"
+**;
 * Após importado o projeto, para facilitar podemos abrir um terminal dentro da *IDE*, através do menu *View* > *Integrated Terminal*
-
-
-
 
 ## Servidor de desenvolvimento
 
 * Para executar o servidor de desenvolvimento é só executar no terminal o comando `ng serve`, com isso a aplicação será publicada em um servidor *Node*. Para acessar a aplicação é só colocar a URL `http://localhost:4200/` no browser.
 
 	**OBS.:** Qualquer alteração nos códigos fontes da aplicação será automaticamente recarregada no browser.
+	
+* Outra maneira é publicar a aplicação no [*heroku*](https://www.heroku.com/).
+	* Criar um projeto no ***heroku***;
+	* Adicionar a *url* do repositório *git* em um novo *remote* no seu projeto, utilizando o comando `git remote add "NOME_DO_REMOTE" "URL_DO_REMOTE"`.
+	* Fazer o merge de todos os arquivos alterados na *branch* ***master*** para a *branch* ***heroku***;
+	* Fazer o *push* da *branch* *heroku* para a *branch* *master* do *remote* do ***heroku***, utilizando o comando `git push heroku heroku:master`. Após isso o *heroku* começa a compilar a aplicação e após o término já é possível utilizar.
 
 ## Comandos para criar os artefatos
 
-* Para gerar um novo componente execute o comando `ng generate component [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]` ou de maneira resumida, apenas `ng g c [NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]`.
+* Para gerar os módulos, execute o comando `ng generate module "NOME_DIRETÓRIO_MÓDULO"/"NOME_MÓDULO"`.
+	* Criar os módulos no diretório **modules**.
+
+* Para gerar um novo componente, execute o comando `ng generate component "NOME_DIRETÓRIO_COMPONENTE"/"NOME_COMPONENTE"` ou de maneira resumida, apenas `ng g c "NOME_DIRETÓRIO_COMPONENTE"/"NOME_COMPONENTE"`.
 	* Criar os componentes no diretório **components**.
 	* Caso queria criar um componente dentro de um módulo específico, utilizar o comando:
-		* `ng generate component [NOME_DIRETÓRIO_MÓDULO]/[NOME_DIRETÓRIO_COMPONENTE]/[NOME_COMPONENTE]`
+		* `ng generate component "NOME_DIRETÓRIO_MÓDULO"/"NOME_DIRETÓRIO_COMPONENTE"/"NOME_COMPONENTE"`
 
-	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c components/[NOME_COMPONENTE] --spec=false`.
+	**OBS.:** Para que o *Angular CLI* não gere o arquivo de teste, é preciso adicionar o parâmetro `--spec=false`, por exemplo `ng g c components/"NOME_COMPONENTE" --spec=false`.
 
-* Para gerar uma nova classe execute o comando `ng generate class [NOME_DIRETÓRIO_CLASSE]/[NOME_CLASSE]`.
+* Para gerar uma nova classe, execute o comando `ng generate class "NOME_DIRETÓRIO_CLASSE"/"NOME_CLASSE"`.
 	* Criar as classes que representam as entidades no diretório **domains**.
 
-* Para gerar um serviço execute o comando `ng generate service [NOME_DIRETÓRIO_SERVICO]/[NOME_SERVICO]`, com isso será gerado o serviço que será responsável por acessar a API Rest.
+* Para gerar um serviço, execute o comando `ng generate service "NOME_DIRETÓRIO_SERVICO"/"NOME_SERVICO"`, com isso será gerado o serviço que será responsável por acessar a *API Rest*.
+	* Criar os serviços no diretório **services**.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * Para gerar uma diretiva execute o comando `ng g directive [NOME_DIRETÓRIO_DIRETIVA]/[NOME_DIRETIVA]`.
 	* Criar as diretivas no diretório **directives**.
 
-* Para gerar os módulos, execute o comando `ng generate module [NOME_DIRETÓRIO_MÓDULO]/[NOME_MÓDULO]`.
-	* Criar os módulos no diretório **modules**.
 
 * Para gerar classes utilitárias, executar o comando `ng generate class [NOME_DIRETÓRIO]/[NOME_CLASSE_UTILITÁRIA]`.
 	* Usar o pós-fixo **utils** nas classes utilitárias, por exemplo: `string-utils`;

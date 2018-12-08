@@ -1,0 +1,24 @@
+.app-footer-label:after {
+    content: ": ";
+}
+
+span.app-footer-label-first:after {
+    content: " - ";
+}
+
+span.app-footer-label-date-divider:after {
+    content: "/";
+}
+
+.app-footer-social-network-container {
+    align-self: center;
+}
+
+.app-footer-social-network {
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.app-footer-social-network:hover {
+    color: #c9c9c9;
+}

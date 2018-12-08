@@ -12,9 +12,9 @@ import { Menu } from '../../domains/menu';
 })
 export class NavbarComponent implements OnInit {
 
-  menuItemsReturned : Menu[] = [];
-  pageLogo: string = '/assets/img/logo.png';
-  pageName: string;
+  public menuItemsReturned : Menu[] = [];
+  public pageLogo: string = '/assets/img/logo.png';
+  public pageName: string;
   
   constructor(private titleService: Title) { 
     this.pageName = this.titleService.getTitle();

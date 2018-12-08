@@ -1,10 +1,10 @@
 // Angular
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 // ngx-translate
 import { TranslateService } from '@ngx-translate/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',

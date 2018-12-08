@@ -9,9 +9,9 @@ import { Title } from '@angular/platform-browser';
 })
 export class FooterComponent implements OnInit {
 
-  footerPageName: String;
-  footerYearCreated: Number;
-  footerYearCurrent: Number;
+  public footerPageName: String;
+  public footerYearCreated: Number;
+  public footerYearCurrent: Number;
 
   constructor(titleService: Title) {
     this.footerPageName = titleService.getTitle();

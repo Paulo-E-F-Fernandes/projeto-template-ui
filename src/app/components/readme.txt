@@ -1,0 +1,1 @@
+* Diretório em que os "componentes" da aplicação devem ser colocados.
