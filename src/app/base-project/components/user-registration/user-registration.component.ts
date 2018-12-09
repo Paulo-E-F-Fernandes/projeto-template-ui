@@ -1,6 +1,6 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 // Application
 import { UserRegistration } from '../../domains/user-registration';
@@ -16,22 +16,26 @@ export class UserRegistrationComponent implements OnInit {
   public disabledNickname: boolean = true;
   public userForm: FormGroup;
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-    this.model = new UserRegistration();
-    this.userForm = new FormGroup({
-      'userName': new FormControl(this.model.userName, [Validators.required]),
-      'userUseNickname': new FormControl(this.model.userUseNickname, []),
-      'userNickname': new FormControl({value: this.model.userNickname, disabled: true}, []),
-      'userEmail': new FormControl(this.model.userEmail, [
-        Validators.required,
-        Validators.email
-      ]),
-      'userPassword': new FormControl(this.model.userPassword, []),
-      'userConfirmPassword': new FormControl(this.model.userConfirmPassword, [Validators.required])
-    });
+    this.initModel();
+    this.createForm();
+  }
 
+  initModel() {
+    this.model = new UserRegistration();
+  }
+
+  createForm() {
+    this.userForm = this.fb.group({
+      'userName': [this.model.userName, [Validators.required]],
+      'userUseNickname': [this.model.userUseNickname, []],
+      'userNickname': [{value: this.model.userNickname, disabled: true}, []],
+      'userEmail': [this.model.userEmail, Validators.compose([Validators.required, Validators.email])],
+      'userPassword': [this.model.userPassword, []],
+      'userConfirmPassword': [this.model.userConfirmPassword, [Validators.required]]
+    });
   }
 
   changeUseNickname(ev) {

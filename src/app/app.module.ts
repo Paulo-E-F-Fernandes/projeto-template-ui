@@ -6,10 +6,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 // Font Awesome
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 // ngx-translate
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -24,14 +24,15 @@ import { SidebarModule } from 'primeng/sidebar';
 // Application
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
-import { NavbarSidebarComponent } from './components/navbar-sidebar/navbar-sidebar.component';
-import { LoginComponent } from './components/login/login.component';
-import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
-import { HomeComponent } from './components/home/home.component';
-import { CancelButtonComponent } from './components/cancel-button/cancel-button.component';
+import { BaseProjectModule } from './base-project/base-project.module';
+import { CancelButtonComponent } from './base-project/components/cancel-button/cancel-button.component';
+import { FooterComponent } from './base-project/components/footer/footer.component';
+import { HomeComponent } from './base-project/components/home/home.component';
+import { LoginComponent } from './base-project/components/login/login.component';
+import { NavbarComponent } from './base-project/components/navbar/navbar.component';
+import { NavbarMenuComponent } from './base-project/components/navbar-menu/navbar-menu.component';
+import { NavbarSidebarComponent } from './base-project/components/navbar-sidebar/navbar-sidebar.component';
+import { UserRegistrationComponent } from './base-project/components/user-registration/user-registration.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -43,18 +44,19 @@ library.add(fab, fas);
 @NgModule({
   declarations: [
     AppComponent,
+    CancelButtonComponent,
     FooterComponent,
-    NavbarSidebarComponent,
+    HomeComponent,
+    LoginComponent,
     NavbarComponent,
     NavbarMenuComponent,
-    LoginComponent,
-    UserRegistrationComponent,
-    HomeComponent,
-    CancelButtonComponent,
+    NavbarSidebarComponent,
+    UserRegistrationComponent
   ],
   imports: [
     // Application
     AppRoutingModule,
+    BaseProjectModule,
 
     // Angular
     BrowserAnimationsModule,

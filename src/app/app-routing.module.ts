@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Application
-import { HomeComponent } from './components/home/home.component';
-import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
+import { HomeComponent } from './base-project/components/home/home.component';
+import { UserRegistrationComponent } from './base-project/components/user-registration/user-registration.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full', outlet: 'main-content' },
-  { path: 'signUp', component: UserRegistrationComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'signUp', component: UserRegistrationComponent }
   //{ path: 'heroes', component: HeroesComponent }
 ];
 

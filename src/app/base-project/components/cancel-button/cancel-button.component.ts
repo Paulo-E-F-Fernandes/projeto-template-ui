@@ -1,3 +1,4 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,11 +10,6 @@ export class CancelButtonComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  closeModal() {
-    console.log('close modal');
-  }
+  ngOnInit() { }
 
 }
